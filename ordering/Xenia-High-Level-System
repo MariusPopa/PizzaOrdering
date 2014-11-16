@@ -1,0 +1,22 @@
+Customer
+
+
+   * Make Order (order options: crust type, pizza size, toppings, drinks, eat-in vs delivery )
+   * Make Payment (credit/debit, cash)
+
+Sales Assistant
+
+
+   * Take order 
+   * Take payment
+   * Inform on delivery time estimate
+   * Deliver (it’s a software system. no need to cook and actually deliver, right?)
+
+Store Manager (Owner)
+
+
+   * Set/Adjust prices 
+   * Update inventory (add/delete options on pizzas/drinks)
+   * Open/Close branches        
+
+
