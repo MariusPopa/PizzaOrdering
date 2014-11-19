@@ -1,0 +1,53 @@
+Use Case:
+	Customer orders, in store or remotely (step are pretty much same)
+	Steps:
+	1) select order options (size, toppings, crust, drink combination). 
+	2) Select delivery options
+	3) receive price estimate
+	4) if order is to be delivered, receive delivery estimate
+	5) select payment option (cash/card, now/later)
+	6) optional: pay
+
+Use Case:
+	Customer/Employee order alteration
+	Precondition: order is already in processing
+	Steps:
+	1) customer contacts employee with alteration request
+	2) customer pays price difference, or receives refund
+
+	
+Use Case:
+	Employee takes order
+	Steps:
+	1) receive order from customer
+	2) record order
+	3) obtain total and delivery estimate (if applicable), communicate to customer
+	4) process payment options (system should take care of initiating cooking/delivery once payment is processed)
+	
+Use Case :
+	Customer receives refund
+	Steps:
+	1) Customer contacts employee for refund
+	2) Refund is approved (of refund is rejected, we stop here)
+	3) Refund is processed by employee
+
+Use Case:
+	Employee voids transaction
+	Steps:
+	1) an action causing the transaction void occurs (lost pizza? bad service? dead customer?)
+	2) manager approves void 
+	3) employee voids transaction
+
+Use Case:
+	Manager audits the system
+	Steps:
+	1) manager generates report
+	2) manager examines report and (optionally) takes action (alter inventory, change pricing, void transactions etc)
+
+Use Case:
+	Manager modifies inventory
+	Steps:
+	1) enters new items
+	2) deletes irrelevant/expired items
+	3) creates/edits "specials" and "combos" (combinations of product with special pricing) 
+		
