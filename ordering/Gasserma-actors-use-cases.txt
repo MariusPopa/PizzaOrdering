@@ -5,25 +5,68 @@ Actors
 4. The store (the entity representing the stores financial interest)
 5. The inventory (the entity representing the stores inventory control and ordering persona)
 
-Use Cases (implied in all are the breadth of pizza sizes, drink, crust choise, and toppings - also implied are basic logical functions like calculating change, calculating estimated delivery time, and paying with multiple payment instruments/coupons, which may be allowed in combination with sales)
+Use Cases (implied in all are the breadth of pizza sizes, drink, crust choise, and toppings - 
+also implied are basic logical functions like calculating change, 
+calculating estimated delivery time, and paying with multiple payment instruments/coupons, which may be allowed in combination with sales)
 
-1. Customer comes to physical storefront and orders. Employee places order in system. Order is checked against sales. Customer pays in cash/card. Pizza is given in store.
-2. Customer calls store and orders. Employee places order in system. Order is checked against sales. Customer pays with card. Pizza is dliverd and order is closed store.
-3. Customer calls store and orders. Employee places order in system. Order is checked against sales. Customer pays with card upon delivery. Pizza is deliverd and order closed.
-4. Customer calls store and orders. Employee places order in system. Order is checked against sales. Customer picks up order in store and pays with cash/card and order is closed.
-5. Customer order is closed after typical transaction. Customer complains and order is refunded (full or partial).
-6. Customer order is closed after typical transaction. Customer complains and order is re deliverd (same order).
-7. Customer order is closed after typical transaction. Customer complains and order is changed and redlivered (with and without price change). 
-8. Customer order is closed after typical transaction. Customer asks for alteration. Order is adjusted, price re-evaluated, and customer is either charged difference, no action is taken, or manager authorizes partial refund.
-9. Employee charges customer card incorrectly. Manager authorizes voiding of transaction. Charge is reversed.
-10. Customer orders via phone, indicated cash payment, and does not pay or partially pays. Manager authorizes void or partial void.
-11. Customer places future order and pays immediately. Customer picks up or has order deliverd in future, at which point order is closed.
+1. Customer comes to physical storefront and orders. 
+Employee places order in system. 
+Order is checked against sales. 
+Customer pays in cash/card. 
+Pizza is given in store.
+
+2. Customer calls store and orders. 
+Employee places order in system. 
+Order is checked against sales. 
+Customer pays with card. 
+Pizza is dliverd and order is closed store.
+
+3. Customer calls store and orders. 
+Employee places order in system. 
+Order is checked against sales. 
+Customer pays with card upon delivery. 
+Pizza is deliverd and order closed.
+
+4. Customer calls store and orders. 
+Employee places order in system. 
+Order is checked against sales. 
+Customer picks up order in store and pays with cash/card and order is closed.
+
+5. Customer order is closed after typical transaction. 
+Customer complains and order is refunded (full or partial).
+6. Customer order is closed after typical transaction. 
+Customer complains and order is re deliverd (same order).
+
+7. Customer order is closed after typical transaction.
+ Customer complains and order is changed and redlivered (with and without price change). 
+8. Customer order is closed after typical transaction. 
+Customer asks for alteration. 
+Order is adjusted, price re-evaluated, and customer is either charged difference, 
+no action is taken, or manager authorizes partial refund.
+
+9. Employee charges customer card incorrectly. 
+Manager authorizes voiding of transaction. Charge is reversed.
+
+10. Customer orders via phone, indicated cash payment, 
+and does not pay or partially pays. Manager authorizes void or partial void.
+
+11. Customer places future order and pays immediately.
+ Customer picks up or has order deliverd in future, at which point order is closed.
 12. Customer places future order and elects to defer payment. Customer picks up or has order deliverd in future and pays then, at which point order is closed.
+
 13. Employee enters order and never closes order (either failure to remember, laziness, etc.) Eventually point of sale system suffers from performance degredation due to vast number of outstanding orders. Latent open orders are bulk clenaed up by date of entry with manager authorization (or individually cleaned up).
-14. Employee enters order and never closes order. Eventually the store notices a large balance owing in the system and cleans up orders in bulk with manager approval (or individually cleaned up).
-15. Employee enters order and never closes order. Eventually inventory is overflowing due to items reported sold but never actually consumed. Open orders are bulk cleaned up by entry date with manager approval (or individually cleaned up).
-16. Employee accidentally destroys some inventory. Manager authorizes manual inventory adjustment.
+14. Employee enters order and never closes order. 
+Eventually the store notices a large balance owing in the system and cleans up orders in 
+bulk with manager approval (or individually cleaned up).
+15. Employee enters order and never closes order. 
+Eventually inventory is overflowing due to items reported sold but never actually consumed. 
+Open orders are bulk cleaned up by entry date with manager approval (or individually cleaned
+ up).
+16. Employee accidentally destroys some inventory. 
+Manager authorizes manual inventory adjustment.
+
 17. Manager alters sales combinations.
 18. Manager alters pricing.
 19. Manager altering sales combinations races with customer ordering. Customer recieves price that is evaluated when employee commits order. In other words, the system isn't remembering past deals on purpose. The manager needs to do this manually.
-20. Manager altering pricing races with customer ordering. Customer recieves prices on employee commit, at same time as sale evaluation.
+20. Manager altering pricing races with customer ordering. 
+Customer recieves prices on employee commit, at same time as sale evaluation.
