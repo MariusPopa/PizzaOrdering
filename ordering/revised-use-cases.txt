@@ -1,13 +1,23 @@
-Use Case:
-	Customer orders, in store or remotely (step are pretty much same)
-	Steps:
-	1) select order options (size, toppings, crust, drink combination). 
-	2) Select delivery options
-	3) receive price estimate
-	4) if order is to be delivered, receive delivery estimate
-	5) select payment option (cash/card, now/later)
-	6) optional: pay
-
+Use Case: 
+	Title:"Customer Makes Order"
+	Main Success Scenario:
+	1) select order options (size, toppings, crust, drink combination, eat-in vs. delivery) 
+	1a. certain item (topping, beverage) is not available 
+		system informs the customer.
+		customer selects alternative topping or beverage
+	
+	2) get price
+	3) if order is to be delivered, receive delivery estimate
+	3a. system does not deliver to customer's location
+	 - order is cancelled
+	3b. delivery time is not acceptable
+	 - order is cancelled
+	4) select payment option (cash/card)
+	5) if paying by card, pay at the time of order. Otherwise, pay after delivery 
+	5a. payment does not go through
+	 - customer offers alternative method of payment
+	 - order is cancelled
+	
 Use Case:
 	Customer/Employee order alteration
 	Precondition: order is already in processing
