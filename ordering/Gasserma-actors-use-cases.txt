@@ -5,7 +5,7 @@ Actors
 4. The store (the entity representing the stores financial interest)
 5. The inventory (the entity representing the stores inventory control and ordering persona)
 
-Use Cases (implied in all are the breadth of pizza sizes, drink, crust choise, and toppings - 
+Use Cases (implied in all are the breadth of pizza sizes, drink, crust choice, and toppings - 
 also implied are basic logical functions like calculating change, 
 calculating estimated delivery time, and paying with multiple payment instruments/coupons, which may be allowed in combination with sales)
 
